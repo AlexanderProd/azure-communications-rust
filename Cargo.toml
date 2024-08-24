@@ -2,6 +2,11 @@
 name = "azure-communications"
 version = "0.1.0"
 edition = "2021"
+description = "API Wrapper for the Azure Communication Services in Rust."
+repository = "https://github.com/AlexanderProd/azure-communications-rust"
+homepage = "https://github.com/AlexanderProd/azure-communications-rust"
+keywords = ["azure", "communications", "sms", "chat", "calling"]
+categories = ["api-bindings", "email"]
 
 [dependencies]
 anyhow = "1.0.86"
