@@ -1,6 +1,6 @@
 use std::env;
 
-use azure_communications::{communication::email::Recipient, AzureCommunicationService};
+use azure_communications::{types::Recipient, AzureCommunicationService};
 
 #[tokio::main]
 async fn main() {

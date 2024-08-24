@@ -50,7 +50,7 @@ The `send_mail` method requires a sender address, a subject, an optional body, a
 The recipient list must contain at least one recipient, and each recipient must have a valid email address, as well as an optional display name.
 
 ```rust
-use azure_communication::AzureCommunicationsClient;
+use azure_communication::{AzureCommunicationsClient, types::Recipient};
 
 let az_communications = AzureCommunicationService::new(&connection_string, None);
 

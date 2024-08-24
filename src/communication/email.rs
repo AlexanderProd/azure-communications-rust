@@ -1,15 +1,10 @@
 use anyhow::Result;
 use reqwest::Url;
-use serde::Serialize;
 use serde_json::json;
 
-use super::{AzureCommunicationService, AZURE_API_VERSION};
+use crate::types::Recipient;
 
-#[derive(Serialize)]
-pub struct Recipient {
-    pub address: String,
-    pub display_name: Option<String>,
-}
+use super::{AzureCommunicationService, AZURE_API_VERSION};
 
 impl AzureCommunicationService {
     pub async fn send_mail(

@@ -5,6 +5,9 @@ edition = "2021"
 description = "API Wrapper for the Azure Communication Services in Rust."
 repository = "https://github.com/AlexanderProd/azure-communications-rust"
 homepage = "https://github.com/AlexanderProd/azure-communications-rust"
+license = "MIT"
+readme = "README.md"
+authors = ["Alexander Hörl <mail@alexanderhoerl.de>"]
 keywords = ["azure", "communications", "sms", "chat", "calling"]
 categories = ["api-bindings", "email"]
 
