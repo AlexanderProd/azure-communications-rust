@@ -1,4 +1,8 @@
-# Azure Communication Services for Rust 📱 📧
+# Azure Communication Services for Rust 📱
+
+[![crates.io](https://img.shields.io/crates/v/azure-communications.svg)](https://crates.io/crates/azure-communications)
+[![dependency status](https://deps.rs/repo/github/AlexanderProd/azure-communications-rust/status.svg)](https://deps.rs/repo/github/AlexanderProd/azure-communications-rust)
+[![charls documentation](https://docs.rs/azure-communications/badge.svg)](https://docs.rs/azure-communications)
 
 This Rust library provides a convenient wrapper for the Azure Communications API, making it easy to integrate Azure Communication Services into your Rust projects.
 
