@@ -8,7 +8,7 @@ homepage = "https://github.com/AlexanderProd/azure-communications-rust"
 license = "MIT"
 readme = "README.md"
 authors = ["Alexander Hörl <mail@alexanderhoerl.de>"]
-keywords = ["azure", "communications", "sms", "chat", "calling"]
+keywords = ["azure", "communications", "sms", "chat", "email"]
 categories = ["api-bindings", "email"]
 
 [dependencies]
