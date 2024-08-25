@@ -1,4 +1,4 @@
-use crate::utils::{create_authorization_signature, get_utc_string};
+use crate::utils::{create_authorization_signature, format_utc_string};
 use anyhow::Result;
 use base64::{engine::general_purpose::STANDARD as base64, Engine};
 use regex::Regex;
@@ -49,7 +49,7 @@ impl AzureCommunicationService {
         let content_hash_base64 = base64.encode(content_hash);
 
         let now = OffsetDateTime::now_utc();
-        let date = get_utc_string(now)?;
+        let date = format_utc_string(now)?;
 
         let signature = create_authorization_signature(&url, &body, access_key, &date)?;
 
