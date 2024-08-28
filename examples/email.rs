@@ -9,10 +9,10 @@ async fn main() {
 
     let sender_adress = env::var("SENDER_ADDRESS").expect("Missing SENDER_ADDRESS");
 
-    let recipients = vec![Recipient {
-        address: env::var("RECIPIENT_ADDRESS").expect("Missing RECIPIENT_ADDRESS"),
-        display_name: None,
-    }];
+    let recipients = vec![Recipient::new(
+        &env::var("RECIPIENT_ADDRESS").expect("Missing RECIPIENT_ADDRESS"),
+        None,
+    )];
 
     let az_communications = AzureCommunicationService::new(&connection_string, None);
 

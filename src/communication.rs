@@ -12,8 +12,6 @@ use time::OffsetDateTime;
 pub mod email;
 pub mod sms;
 
-const AZURE_API_VERSION: &str = "2023-03-31";
-
 #[derive(Debug, Clone)]
 pub struct AzureCommunicationService {
     pub endpoint: String,

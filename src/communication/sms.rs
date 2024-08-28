@@ -2,7 +2,9 @@ use anyhow::Result;
 use reqwest::Url;
 use serde_json::json;
 
-use super::{AzureCommunicationService, AZURE_API_VERSION};
+use super::AzureCommunicationService;
+
+const API_VERSION: &str = "2021-03-07";
 
 impl AzureCommunicationService {
     /// Message must not exceed 160 characters.
@@ -15,10 +17,7 @@ impl AzureCommunicationService {
     ) -> Result<()> {
         let endpoint = &self.endpoint;
 
-        let url = Url::parse(&format!(
-            "{}sms?api-version={}",
-            endpoint, AZURE_API_VERSION
-        ))?;
+        let url = Url::parse(&format!("{}sms?api-version={}", endpoint, API_VERSION))?;
 
         let body = json!({
             "from": sender_name,

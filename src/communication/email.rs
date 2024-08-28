@@ -4,7 +4,9 @@ use serde_json::json;
 
 use crate::types::Recipient;
 
-use super::{AzureCommunicationService, AZURE_API_VERSION};
+use super::AzureCommunicationService;
+
+const API_VERSION: &str = "2023-03-31";
 
 impl AzureCommunicationService {
     pub async fn send_mail(
@@ -19,7 +21,7 @@ impl AzureCommunicationService {
 
         let url = Url::parse(&format!(
             "{}emails:send?api-version={}",
-            endpoint, AZURE_API_VERSION
+            endpoint, API_VERSION
         ))?;
 
         let body = json!({
