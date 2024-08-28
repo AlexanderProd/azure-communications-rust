@@ -18,7 +18,7 @@ Add this to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-azure-communications = "0.1.0"
+azure-communications = "0.1.1"
 ```
 
 or run this command in your project directory:
